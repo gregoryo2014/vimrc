@@ -1,5 +1,3 @@
-" This file is managed by Ansible
-
 " Turn off Vi compatibility options. Turned off by the presence of .vimrc anyway
 set nocompatible
 
