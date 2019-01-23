@@ -19,7 +19,7 @@ set matchtime=2
 
 " Give nice syntax highlights
 " Not available in vim-tiny
-"syntax on
+syntax on
 
 " case-sensitive if search contains an uppercase character
 set ignorecase
@@ -27,3 +27,9 @@ set smartcase
 
 " highlight search
 set hls
+
+" Good for managing indentation, e.g. YAML, Python
+set cursorcolumn
+
+" Make line wrapping happen at words instead of characters
+set lbr
