@@ -7,7 +7,7 @@ set background=dark
 " Show incremental search result - fast terminal
 set incsearch
 
-" Disable the unused modeline for security purposes
+" Disable the unused modeline, for security purposes
 set nomodeline
 
 " Show the cursor position in bottom right - fast terminal
@@ -29,14 +29,22 @@ set smartcase
 set hls
 
 " Good for managing indentation, e.g. YAML, Python
-set cursorcolumn
+"set cursorcolumn
 
 " Make line wrapping happen at words instead of characters
 set lbr
 
+" Indent using spaces to match previous line
 set autoindent
+set expandtab
 
-" Scroll offset - keep this many lines above and below the cursor on screen
+" Automatically fold to indents, handy for YAML
+" za toggle a fold
+" zR open all folds
+" zM close all folds
+set foldmethod=indent
+
+" Keep this many lines above and below the cursor on screen
 "set scrolloff=5
 
 " Might be useful for long long lines
