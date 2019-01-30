@@ -2,7 +2,7 @@
 set nocompatible
 
 " Dark background setting, particularly to use a lighter blue
-set bg=dark
+set background=dark
 
 " Show incremental search result - fast terminal
 set incsearch
@@ -33,3 +33,24 @@ set cursorcolumn
 
 " Make line wrapping happen at words instead of characters
 set lbr
+
+set autoindent
+
+" Scroll offset - keep this many lines above and below the cursor on screen
+"set scrolloff=5
+
+" Might be useful for long long lines
+"set display=truncate
+
+" Options to explore
+"set filetype=yaml
+"set syntax=yaml
+"set expandtab
+"set incsearch
+"set nrformats=bin,hex
+"set showcmd
+"set ttyfast
+"set backspace=indent,eol,start
+"set formatoptions=croql
+"set indentexpr=GetYAMLIndent(v:lnum)
+"set indentkeys=!^F,o,O,0#,0},0],<:>,0-
