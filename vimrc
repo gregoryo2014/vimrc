@@ -45,7 +45,19 @@ set expandtab
 set foldmethod=indent
 
 " Keep this many lines above and below the cursor on screen
-"set scrolloff=5
+set scrolloff=3
+
+
+" ========== Plugins ==========
+" mkdir -p ~/.vim/autoload
+" curl -O ~/.vim/autoload/plug.vim https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+" In Vim: :PlugInstall
+call plug#begin('~/.vim/plugged')
+Plug 'mhinz/vim-signify'
+call plug#end()
+
+
+" ========== experiment with these options later ==========
 
 " Might be useful for long long lines
 "set display=truncate
