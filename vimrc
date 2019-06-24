@@ -38,6 +38,10 @@ set lbr
 set autoindent
 set expandtab
 
+" Set a short shift width - shiftwidth affects indentLine
+set shiftwidth=2
+set tabstop=2
+
 " Automatically fold to indents, handy for YAML
 " za toggle a fold
 " zR open all folds
@@ -54,6 +58,7 @@ set scrolloff=3
 " In Vim: :PlugInstall
 call plug#begin('~/.vim/plugged')
 Plug 'mhinz/vim-signify'
+Plug 'Yggdroot/indentLine'
 call plug#end()
 
 
